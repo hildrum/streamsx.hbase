@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//ENs"
+"/homes/hny2/hildrum/Distillery.dir/kaveri_mar/ext/dita-ot/dtd/technicalContent/dtd/reference.dtd">
+<reference id ="X">
+<title> Namespace <tt>com.ibm.streamsx.hbase</tt></title>
+<abstract>
+
+
+</abstract>
+<refbody>
+<section>
+<p>
+<xref href="toolkit.xml">
+com.ibm.streamsx.hbase
+</xref>
+-&gt; com.ibm.streamsx.hbase</p>
+</section>
+<section>
+  <title outputclass="splhead-1">Operators</title>
+<sl>
+<sli><b><xref href="com.ibm.streamsx.hbase$HBASEDelete.xml">HBASEDelete</xref></b>: Delete an entry, an entire row, a columnFamily in a row, or a columnFamily, columnQualifier pair in a row from HBASE, with optional checkAndDelete.
+</sli>
+<sli><b><xref href="com.ibm.streamsx.hbase$HBASEGet.xml">HBASEGet</xref></b>: Get tuples from HBASE; similar to enrich from database operators.
+</sli>
+<sli><b><xref href="com.ibm.streamsx.hbase$HBASEIncrement.xml">HBASEIncrement</xref></b>: Increment the specified HBASE entry.
+</sli>
+<sli><b><xref href="com.ibm.streamsx.hbase$HBASEPut.xml">HBASEPut</xref></b>: Put tuples in HBASE, with support for checkAndPut.
+</sli>
+<sli><b><xref href="com.ibm.streamsx.hbase$HBASEScan.xml">HBASEScan</xref></b>: Scan an HBASE table.
+</sli>
+</sl>
+</section>
+</refbody>
+</reference>
+

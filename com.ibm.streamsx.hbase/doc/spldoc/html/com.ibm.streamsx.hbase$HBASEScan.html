@@ -31,7 +31,7 @@ com.ibm.streamsx.hbase
 
 <div class="section">
 
-<p class="p">Scan an HBASE table, outputing all entries as tuples.  An optional start row and end row may be specified.
+<p class="p">Scan an HBASE table.  Each row/columnFamily/columnQualifer/value entry is mapped to a tuple, with the row populating the row attribute, the columnFamily populating teh columnFamily attribute, the columnQualifier attribute populating the columnQualifier attribute, and the value populating the value attribute.  The value may either be a long or a string, all other values must be rstring.  An optional start row and end row may be specified.
 </p>
 
 </div>

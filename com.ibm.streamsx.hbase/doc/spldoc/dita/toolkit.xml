@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//ENs"
+"/homes/hny2/hildrum/Distillery.dir/kaveri_mar/ext/dita-ot/dtd/technicalContent/dtd/reference.dtd">
+<reference id="spldoc_toolkit__toolkit__1.0.0.commit_a815be0">
+<title>IBMStreams com.ibm.streamsx.hbase Toolkit</title>
+<shortdesc outputclass="spltoolkitname">com.ibm.streamsx.hbase</shortdesc>
+<refbody>
+<section>
+<title outputclass="splhead-1">General Information</title>
+
+<p>Provides support for interacting with HBASE from Streams. 
+</p>
+<p>Tuples can be added to HBASE via the HBASEPut operator (including with a checkAndPut condition) or incremented with the HBASEIncrement operator.  Tuples can be retrieved with the HBASEGet operator.  The HBASETableScan operator can output all tuples, or all tuples in a particular row range.  The HBASEDelete operator enables tuples to be delted from HBASE. 
+</p>
+<p>Configuration uses the same hbase-site.xml that HBASE itself does. 
+</p>
+<dl>
+  <dlentry>
+  <dt>Version</dt>
+  <dd>1.0.0.commit_a815be0</dd>
+  </dlentry>
+  <dlentry>
+  <dt>Required Product Version</dt>
+  <dd>3.2.0</dd>
+  </dlentry>
+  <dlentry>
+  <dt>Author</dt>
+  <dd>IBMStreams Open Source Community at GitHub - https://github.com/IBMStreams/streamsx.hbase</dd>
+  </dlentry>
+</dl>
+</section>
+<section>
+  <title outputclass="splhead-1">Namespaces</title>
+<dl>
+   <dlentry>
+     <dt outputclass="splpart"><xref href="$.xml">&lt;default&gt;</xref></dt>
+  <dd>SPL Files
+       <sl>
+         <sli><xref href="$GettingStarted$spl.xml">/GettingStarted.spl</xref></sli>
+       </sl>
+   </dd>
+     </dlentry>   <dlentry>
+     <dt outputclass="splpart"><xref href="com.ibm.streamsx.hbase$.xml">com.ibm.streamsx.hbase</xref></dt>
+  <dd>SPL Files
+       <sl>
+         <sli><xref href="com.ibm.streamsx.hbase$overview$spl.xml">com.ibm.streamsx.hbase/overview.spl</xref></sli>
+       </sl>
+   </dd>
+   <dd>Operators
+       <sl>
+         <sli><xref href="com.ibm.streamsx.hbase$HBASEDelete.xml">HBASEDelete</xref></sli>
+         <sli><xref href="com.ibm.streamsx.hbase$HBASEGet.xml">HBASEGet</xref></sli>
+         <sli><xref href="com.ibm.streamsx.hbase$HBASEIncrement.xml">HBASEIncrement</xref></sli>
+         <sli><xref href="com.ibm.streamsx.hbase$HBASEPut.xml">HBASEPut</xref></sli>
+         <sli><xref href="com.ibm.streamsx.hbase$HBASEScan.xml">HBASEScan</xref></sli>
+       </sl>
+   </dd>
+     </dlentry></dl>
+</section>
+<section>
+  <title outputclass="splhead-1">References</title>
+    <sl>
+    <sli><xref href="OperatorModel.xml">Operator Model</xref></sli>
+    </sl>
+</section>
+</refbody>
+</reference>
+

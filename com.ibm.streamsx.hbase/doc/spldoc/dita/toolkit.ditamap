@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//ENs"
+"/homes/hny2/hildrum/Distillery.dir/kaveri_mar/ext/dita-ot/dtd/technicalContent/dtd/map.dtd">
+<map id="spldoc_map__toolkit__1.0.0.commit_a815be0">
+<title>com.ibm.streamsx.hbase</title>
+<topicref navtitle="com.ibm.streamsx.hbase 1.0.0.commit_a815be0" locktitle="yes" href="toolkit.xml" toc="yes" linking="normal">
+<topichead><topicmeta><navtitle>Namespaces</navtitle></topicmeta>
+<topicref navtitle="com.ibm.streamsx.hbase" locktitle="yes" format="dita" href="com.ibm.streamsx.hbase$.xml" toc="yes" linking="none"/>
+</topichead><topichead><topicmeta><navtitle>Primitive Operators</navtitle></topicmeta>
+<topicref navtitle="com.ibm.streamsx.hbase::HBASEDelete" locktitle="yes" format="dita" href="com.ibm.streamsx.hbase$HBASEDelete.xml" toc="yes" linking="none"/>
+<topicref navtitle="com.ibm.streamsx.hbase::HBASEGet" locktitle="yes" format="dita" href="com.ibm.streamsx.hbase$HBASEGet.xml" toc="yes" linking="none"/>
+<topicref navtitle="com.ibm.streamsx.hbase::HBASEIncrement" locktitle="yes" format="dita" href="com.ibm.streamsx.hbase$HBASEIncrement.xml" toc="yes" linking="none"/>
+<topicref navtitle="com.ibm.streamsx.hbase::HBASEPut" locktitle="yes" format="dita" href="com.ibm.streamsx.hbase$HBASEPut.xml" toc="yes" linking="none"/>
+<topicref navtitle="com.ibm.streamsx.hbase::HBASEScan" locktitle="yes" format="dita" href="com.ibm.streamsx.hbase$HBASEScan.xml" toc="yes" linking="none"/>
+</topichead><topichead><topicmeta><navtitle>SPL Files</navtitle></topicmeta>
+<topicref navtitle="/GettingStarted.spl" locktitle="yes" format="dita" href="$GettingStarted$spl.xml" toc="yes" linking="none"/>
+<topicref navtitle="com.ibm.streamsx.hbase/overview.spl" locktitle="yes" format="dita" href="com.ibm.streamsx.hbase$overview$spl.xml" toc="yes" linking="none"/>
+</topichead><topichead><topicmeta><navtitle>References</navtitle></topicmeta>
+<topicref navtitle="Operator Model" locktitle="yes" format="dita" href="OperatorModel.xml" toc="yes" linking="none"/>
+</topichead></topicref></map>
+

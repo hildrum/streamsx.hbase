@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//ENs"
+"/homes/hny2/hildrum/Distillery.dir/kaveri_mar/ext/dita-ot/dtd/technicalContent/dtd/reference.dtd">
+<reference id ="spldoc_operator__com.ibm.streamsx.hbase__HBASEScan">
+<title>com.ibm.streamsx.hbase::HBASEScan</title>
+<refbody>
+<section>
+<p>
+<xref href="toolkit.xml">
+com.ibm.streamsx.hbase
+</xref>
+-&gt; <xref href="com.ibm.streamsx.hbase$.xml">com.ibm.streamsx.hbase</xref>-&gt; HBASEScan</p>
+</section>
+<section>
+
+<p>Scan an HBASE table.  Each row/columnFamily/columnQualifer/value entry is mapped to a tuple, with the row populating the row attribute, the columnFamily populating teh columnFamily attribute, the columnQualifier attribute populating the columnQualifier attribute, and the value populating the value attribute.  The value may either be a long or a string, all other values must be rstring.  An optional start row and end row may be specified.
+</p>
+</section>
+<section outputclass="splprimop">
+<object type="image/svg+xml" data="../image/com.ibm.streamsx.hbase$HBASEScan.svg" width="672" height="112">
+<desc>Primitive operator image not displayed. Problem loading file: ../image/com.ibm.streamsx.hbase$HBASEScan.svg
+</desc>
+</object>
+</section>
+<section>
+<title outputclass="splhead-1">Summary</title>
+<dl compact="yes">
+ <dlentry>
+  <dt>Ports</dt>
+  <dd>This operator has 0 input port and 1 output port.</dd>
+ </dlentry>
+ <dlentry>
+  <dt>Windowing</dt>
+  <dd>This operator does not accept any windowing configurations.</dd>
+ </dlentry>
+ <dlentry>
+  <dt>Parameters</dt>
+  <dd>This operator supports 5 parameters. (<tt>endRow, startRow, staticColumnFamily, staticColumnQualifier, tableName</tt>)
+</dd>
+ </dlentry>
+ <dlentry>
+  <dt>Metrics</dt>
+  <dd>This operator does not report any metrics.</dd>
+ </dlentry>
+</dl></section>
+<section>
+<title outputclass="splhead-1">Properties</title>
+<dl compact="yes">
+ <dlentry>
+  <dt>Implementation</dt>
+  <dd>Java</dd>
+ </dlentry>
+</dl>
+</section>
+<section>
+<p outputclass="splhead-1"><b><xref href="OperatorModel.xml#spldoc_reference_operator_model/output_port_set">Output Ports</xref></b></p><dl>
+  <dlentry>
+     <dt>Assignments</dt>
+       <dd>Java operators do not support output assignments.
+       </dd>
+  </dlentry>
+</dl>
+<dl>
+  <dlentry>
+   <dt>Ports (0)</dt>
+   <dd>
+
+<p>Tuples found
+</p>
+<p></p>
+   <dl>
+    <dlentry>
+      <dt>Properties</dt>
+      <dd>
+   <sl>
+     <sli><xref href="OperatorModel.xml#spldoc_reference_operator_model/output_port_set__optional">Optional</xref>: false
+     </sli>
+   </sl>
+   <sl>
+     <sli><xref href="OperatorModel.xml#spldoc_reference_operator_model/output_port_set__windowpunctuationoutputmode">WindowPunctuationOutputMode</xref>: Generating
+     </sli>
+   </sl>
+      </dd>
+    </dlentry>
+   </dl>
+   <p></p>
+   </dd>
+  </dlentry>
+</dl>
+</section>
+<section>
+<p outputclass="splhead-1"><b><xref href="OperatorModel.xml#spldoc_reference_operator_model/parameters">Parameters</xref></b></p>This operator supports 5 parameters.<dl>
+<dlentry>
+<dt id="parameter_endRow"><tt>endRow</tt></dt>
+<dd>
+<p>Row to use to stop the scan (exclusive)
+</p><dl>
+<dlentry>
+ <dt>Properties </dt>
+ <dd>
+  <sl>
+  <sli><xref href="OperatorModel.xml#spldoc_reference_operator_model/parameters__parameter__type">Type</xref>: rstring
+  </sli>
+     <sli><xref href="OperatorModel.xml#spldoc_reference_operator_model/parameters__parameter__cardinality">Cardinality</xref>: 1
+     </sli>
+     <sli><xref href="OperatorModel.xml#spldoc_reference_operator_model/parameters__parameter__optional">Optional</xref>: true
+     </sli>
+  </sl>
+ </dd>
+</dlentry>
+</dl>
+</dd>
+</dlentry>
+<dlentry>
+<dt id="parameter_startRow"><tt>startRow</tt></dt>
+<dd>
+<p>Row to use to start the scan (inclusive)
+</p><dl>
+<dlentry>
+ <dt>Properties </dt>
+ <dd>
+  <sl>
+  <sli><xref href="OperatorModel.xml#spldoc_reference_operator_model/parameters__parameter__type">Type</xref>: rstring
+  </sli>
+     <sli><xref href="OperatorModel.xml#spldoc_reference_operator_model/parameters__parameter__cardinality">Cardinality</xref>: 1
+     </sli>
+     <sli><xref href="OperatorModel.xml#spldoc_reference_operator_model/parameters__parameter__optional">Optional</xref>: true
+     </sli>
+  </sl>
+ </dd>
+</dlentry>
+</dl>
+</dd>
+</dlentry>
+<dlentry>
+<dt id="parameter_staticColumnFamily"><tt>staticColumnFamily</tt></dt>
+<dd>
+<p>If this parameter is specified, it will be used as the columnFamily for all operations.  (Compare to columnFamilyAttrName.) For HBASEScan, it can have cardinality greater than one.
+</p><dl>
+<dlentry>
+ <dt>Properties </dt>
+ <dd>
+  <sl>
+  <sli><xref href="OperatorModel.xml#spldoc_reference_operator_model/parameters__parameter__type">Type</xref>: rstring
+  </sli>
+     <sli><xref href="OperatorModel.xml#spldoc_reference_operator_model/parameters__parameter__optional">Optional</xref>: true
+     </sli>
+  </sl>
+ </dd>
+</dlentry>
+</dl>
+</dd>
+</dlentry>
+<dlentry>
+<dt id="parameter_staticColumnQualifier"><tt>staticColumnQualifier</tt></dt>
+<dd>
+<p>If this parameter is specified, it will be used as the columnQualifier for all tuples.  HBASEScan allows it to be specified multiple times.
+</p><dl>
+<dlentry>
+ <dt>Properties </dt>
+ <dd>
+  <sl>
+  <sli><xref href="OperatorModel.xml#spldoc_reference_operator_model/parameters__parameter__type">Type</xref>: rstring
+  </sli>
+     <sli><xref href="OperatorModel.xml#spldoc_reference_operator_model/parameters__parameter__optional">Optional</xref>: true
+     </sli>
+  </sl>
+ </dd>
+</dlentry>
+</dl>
+</dd>
+</dlentry>
+<dlentry>
+<dt id="parameter_tableName"><tt>tableName</tt></dt>
+<dd>
+<p>Name of the HBASE table.  If it does not exist, the operator will throw an exception on startup
+</p><dl>
+<dlentry>
+ <dt>Properties </dt>
+ <dd>
+  <sl>
+  <sli><xref href="OperatorModel.xml#spldoc_reference_operator_model/parameters__parameter__type">Type</xref>: rstring
+  </sli>
+     <sli><xref href="OperatorModel.xml#spldoc_reference_operator_model/parameters__parameter__cardinality">Cardinality</xref>: 1
+     </sli>
+     <sli><xref href="OperatorModel.xml#spldoc_reference_operator_model/parameters__parameter__optional">Optional</xref>: false
+     </sli>
+  </sl>
+ </dd>
+</dlentry>
+</dl>
+</dd>
+</dlentry>
+</dl>
+</section>
+<section>
+<p outputclass="splhead-1"><b><xref href="OperatorModel.xml#spldoc_reference_operator_model/context__dependencies">Libraries</xref></b></p>
+ <dl>
+ <dlentry>
+  <dt>Operator class library
+  </dt>
+  <dd/>
+  <dd><xref href="OperatorModel.xml#spldoc_reference_operator_model/context__dependencies__managedlibrary__libpath">Library Path</xref>: <tt>../../impl/lib/com.ibm.streamsx.hbase.jar, @HBASE_HOME@/lib/*, @HADOOP_HOME@/hadoop-core.jar, @HADOOP_HOME@/lib/*, @HBASE_HOME@/hbase.jar, @HBASE_HOME@/conf</tt></dd>
+ </dlentry>
+ </dl>
+</section>
+</refbody>
+</reference>
+

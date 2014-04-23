@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//ENs"
+"/homes/hny2/hildrum/Distillery.dir/kaveri_mar/ext/dita-ot/dtd/technicalContent/dtd/reference.dtd">
+<reference id ="spldoc_compilationunit__">
+<title>GettingStarted.spl</title>
+<refbody>
+<section>
+<p>
+<xref href="toolkit.xml">
+com.ibm.streamsx.hbase
+</xref>
+-&gt; <xref href="$.xml">&lt;default&gt;</xref>-&gt; GettingStarted.spl</p>
+</section>
+</refbody>
+</reference>
+

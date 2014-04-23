@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//ENs"
+"/homes/hny2/hildrum/Distillery.dir/kaveri_mar/ext/dita-ot/dtd/technicalContent/dtd/reference.dtd">
+<reference id ="spldoc_compilationunit__">
+<title>overview.spl</title>
+<refbody>
+<section>
+<p>
+<xref href="toolkit.xml">
+com.ibm.streamsx.hbase
+</xref>
+-&gt; <xref href="com.ibm.streamsx.hbase$.xml">com.ibm.streamsx.hbase</xref>-&gt; overview.spl</p>
+</section>
+<section>
+
+<p>A set of operators for writing to and reading from Apache HBASE. 
+</p>
+<p>These operators attempt to follow the HBASE interface as closely as is feasible to give the developer maximum flexibility in interacting with HBASE. 
+</p>
+<p>HBASE is a BigTable-like key-value store build on top of HDFS.  Tables are partitioned by rows across clusters.   
+</p>
+<p>An value in an HBASE table is accessed with row, columnFamily,  columnQualifier, and timestamp.  Usually the timestamp is  left out, and only the latest value is returned.  This toolkit currently provides no support related to timestamps. 
+</p>
+<p>The columnFamily and columnQualifier can collectively be thought of as  a column and are sometimes called that in the APIs.  The separation of the  column into two parts allows for some extra flexibility: the columnFamilies  must be defined when the table established and may be limited, but new  columnQualifiers can be added at runtime and there is no limit to their number. 
+</p>
+<p>For some operators, such as <xref href="com.ibm.streamsx.hbase$HBASEPut.xml">HBASEPut</xref>, the row, columnFamily, columnQualifer, and value must all be specified.  For other operators, such as <xref href="com.ibm.streamsx.hbase$HBASEGet.xml">HBASEGet</xref> and  <xref href="com.ibm.streamsx.hbase$HBASEDelete.xml">HBASEDelete</xref>, the behavior depends on exactly which of those are specified. <xref href="com.ibm.streamsx.hbase$HBASEDelete.xml">HBASEDelete</xref>, for example, will delete the whole row if columnFamily and  columnQualifier are not specified, but can also be used to delete only a single value. 
+</p>
+<p>The columnFamily and columnQualifier (when relevant) may either be specified as an attribute of the input tuple (columnFamilyAttrName, columnQualifierAttrName), or specified as a single string to be used for all tuples (staticColumnFamily,  staticColumnQualifier).  The the row and the value (when needed) come from the  input tuple. 
+</p>
+<p>Please see the individual operators for details: 
+</p>
+<ul>
+<li> <xref href="com.ibm.streamsx.hbase$HBASEPut.xml">HBASEPut</xref> Put a tuple into HBASE. </li>
+<li> <xref href="com.ibm.streamsx.hbase$HBASEGet.xml">HBASEGet</xref> Get a value, the set of values in a row-columnFamily-columnQualifier triple, or the set of values in a row-columnFamily, or all values in a named row. </li>
+<li> <xref href="com.ibm.streamsx.hbase$HBASEScan.xml">HBASEScan</xref> Scan the entire table, getting all rows.  The scan can be limited to a particular set of rows and to a particular set of columnFamilies or columnFamily-columnQualifier combos. </li>
+<li> <xref href="com.ibm.streamsx.hbase$HBASEIncrement.xml">HBASEIncrement</xref> Increment an entry.  The increment can come from the tuple or an operator parameter. </li>
+<li> <xref href="com.ibm.streamsx.hbase$HBASEDelete.xml">HBASEDelete</xref> Delete a row, a columnFamily within a row, or a columnFamily-columnQualifier in a row. </li>
+</ul>
+<p> HBASE supports locking via a check-and-update mechanism for delete and put.  This only locks within a single row, but allows the user to specify either 
+</p>
+<ul>
+<li> a full entry (row, columnFamily, columnQualifier, value), if this entry exists with the given value, make the pure or delete. </li>
+<li> a partial entry (row, columnFamily, columnQualifier): if there is no value, make the update. </li>
+</ul>
+<p> (Note that the row of the put or delete and the row of the check must be the same.) These are supported by <xref href="com.ibm.streamsx.hbase$HBASEPut.xml">HBASEPut</xref> and <xref href="com.ibm.streamsx.hbase$HBASEDelete.xml">HBASEDelete</xref> by specifying a checkAttrName as a parameter. This attribute on the input stream must be of type tuple and have an attribute of columnFamily and columnQualifier (with a value if doin the first type of check).  In this mode, the operator can have an output port with a success attribute to indicate whether the put or delete happened. 
+</p>
+<p>Except for HBASEIncrement and HBASEGet, the only types currently supported are rstrings.  HBASEGet supports getting a value of type long.   
+</p>
+<p>The sample applications were constructed to demonstrate the various use cases. 
+</p>
+</section>
+</refbody>
+</reference>
+
