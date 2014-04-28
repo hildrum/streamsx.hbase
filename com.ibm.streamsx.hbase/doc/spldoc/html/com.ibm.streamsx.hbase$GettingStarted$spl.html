@@ -52,13 +52,16 @@ com.ibm.streamsx.hbase
 <p class="p">For the toolkit to find what it needs, set the environment variable HBASE_HOME to point to the  directory containing HBASE (ie, the directory one step above conf and bin).  You'll likewise need to set HADOOP_HOME to point to the directory containing hadoop.  Again, this is the directory one step up from conf and bin. In BigInsights, it's <tt class="ph tt">IHC</tt>. 
 </p>
 
-<p class="p"><em class="ph i">If streams is not a host containing the HBASE</em> then first copy the HBASE_HOME and HADOOP_HOME to a place accessible to streams.   
+<p class="p"><em class="ph i">If streams is not a host containing the HBASE</em> then first copy the entire HBASE_HOME and HADOOP_HOME to a place accessible to streams.  The operators need both the config files from the conf directory and some of the jars under those directories. 
 </p>
 
-<p class="p"><strong class="ph b">Viewing tuples in HBASE</strong> One very useful tool for debugging is the hbase shell.  To run it, you must be on a HBASE host (ie,  just copying over the files works for streams, but won't work here), and then run <tt class="ph tt">$HBASE_HOME/bin/hbase shell</tt> You'll use the shell to create tables and view their status. 
+<p class="p"><strong class="ph b">Building the toolkit</strong> Once you have set the HBASE_HOME and HADOOP_HOME environment variables, you can build the toolkit by typing ant either in the top-level directory or in the toolkit directory.  If you cloned the repository from github, or downloaded the zip file or archive, then you must do this step, as otherwise there is none of the toolkit artifacts (toolkit.xml, operator xml files, etc) that Streams needs. 
 </p>
 
 <p class="p"><strong class="ph b">Using the toolkit</strong> The <a class="xref" href="com.ibm.streamsx.hbase:overview.spl">com.ibm.streamsx.hbase:overview.spl</a> contains an overall description of the toolkit.  To see the operators in action, look at the samples.  <tt class="ph tt">PutRecord</tt> uses HBASE to store book information, and <tt class="ph tt">PutSample</tt> stores information about characters in a book.  In both cases, you'll need to create the table before running the app, so be sure to read  the comment. 
+</p>
+
+<p class="p"><strong class="ph b">Viewing tuples in HBASE</strong> One very useful tool for debugging is the hbase shell.  To run it, you must be on a HBASE host (ie,  just copying over the files works for streams, but won't work here), and then run <tt class="ph tt">$HBASE_HOME/bin/hbase shell</tt> You'll use the shell to create tables and view their status. 
 </p>
 
 </div>
