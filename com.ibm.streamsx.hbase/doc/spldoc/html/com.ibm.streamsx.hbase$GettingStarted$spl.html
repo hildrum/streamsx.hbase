@@ -55,10 +55,10 @@ com.ibm.streamsx.hbase
 <p class="p"><em class="ph i">If streams is not a host containing the HBASE</em> then first copy the HBASE_HOME and HADOOP_HOME to a place accessible to streams.   
 </p>
 
-<p class="p">** Viewing tuples in HBASE**  One very useful tool for debugging is the hbase shell.  To run it, you must be on a HBASE host (ie,  just copying over the files works for streams, but won't work here), and then run <tt class="ph tt">$HBASE_HOME/bin/hbase shell</tt> You'll use the shell to create tables and view their status. 
+<p class="p"><strong class="ph b">Viewing tuples in HBASE</strong> One very useful tool for debugging is the hbase shell.  To run it, you must be on a HBASE host (ie,  just copying over the files works for streams, but won't work here), and then run <tt class="ph tt">$HBASE_HOME/bin/hbase shell</tt> You'll use the shell to create tables and view their status. 
 </p>
 
-<p class="p"><strong class="ph b">Using the toolkit</strong> The <a class="xref" href="file:com.ibm.streamsx.hbase:overview.spl">file:com.ibm.streamsx.hbase:overview.spl</a> contains an overall description of the toolkit.  To see the operators in action, look at the samples.  <tt class="ph tt">PutRecord</tt> uses HBASE to store book information, and <tt class="ph tt">PutSample</tt> stores information about characters in a book.  In both cases, you'll need to create the table before running the app, so be sure to read  the comment. 
+<p class="p"><strong class="ph b">Using the toolkit</strong> The <a class="xref" href="com.ibm.streamsx.hbase:overview.spl">com.ibm.streamsx.hbase:overview.spl</a> contains an overall description of the toolkit.  To see the operators in action, look at the samples.  <tt class="ph tt">PutRecord</tt> uses HBASE to store book information, and <tt class="ph tt">PutSample</tt> stores information about characters in a book.  In both cases, you'll need to create the table before running the app, so be sure to read  the comment. 
 </p>
 
 </div>

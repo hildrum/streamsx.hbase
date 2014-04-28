@@ -1,4 +1,4 @@
-#Tue Apr 22 23:44:23 EDT 2014
+#Mon Apr 28 12:05:47 EDT 2014
 copytosourcelist=
 hreftargetslist=dita/com.ibm.streamsx.hbase.sample$.xml,dita/com.ibm.streamsx.hbase.sample$IncrementDemo$spl.xml,dita/toolkit.xml
 fullditatopicfile=fullditatopic.list
@@ -33,17 +33,17 @@ subjectschemefile=subjectscheme.list
 keyreflist=
 subjectschemelist=
 keyfile=key.list
-keylist=
 codereffile=coderef.list
+keylist=
 codereflist=
 user.input.file.listfile=usr.input.file.list
-uplevels=../
 user.input.dir=/homes/hny2/hildrum/github/hildrum/streamsx.hbase/samples/IncrementSample/doc/spldoc
-conrefpushfile=conrefpush.list
+uplevels=../
 tempdirToinputmapdir.relative.value=dita/
+conrefpushfile=conrefpush.list
 flagimagefile=flagimage.list
-conrefpushlist=
 skipchunkfile=skipchunk.list
+conrefpushlist=
 flagimagelist=
 skipchunklist=
 relflagimagefile=relflagimage.list
