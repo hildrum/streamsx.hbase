@@ -1,4 +1,4 @@
-#Wed Dec 24 16:04:59 EST 2014
+#Wed Dec 24 16:10:01 EST 2014
 copytosourcelist=
 hreftargetslist=tk$ScanRecord/tk$ScanRecord.xml,toolkits/ix$Type.xml,tk$ScanRecord/ix$Type.xml,toolkits/toolkits.xml,tk$ScanRecord/ns$com.ibm.streamsx.hbase.sample.xml,tk$ScanRecord/spl$com.ibm.streamsx.hbase.sample$ScanBooks.xml
 fullditatopicfile=fullditatopic.list
