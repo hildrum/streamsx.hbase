@@ -34,7 +34,7 @@
 <p class="p"><strong class="ph b">Consistent Region</strong>
 </p>
 
-<p class="p">&lt;/p&gt;HBASEPut may be in a consistent region, but it may not be the start of a consistent region. At drain points, it flushes its internal buffer, and at resets, in clears its internal buffer.Thus, it ensures at-least-once tuple processing, but does not guarentee exactly-once tuple processing; thus if there is a reset, the same entry may be put twice.  If used with HBASEGet to do a Get, modify, Put on the same entry in a consistent region, you could end up doingthe modification twice, so that is not recommended. If you need exactly-once tuple processing, using checkAndPut along with sequence numbers may be possible.
+<p class="p">HBASEPut may be in a consistent region, but it may not be the start of a consistent region. At drain points, it flushes its internal buffer, and at resets, in clears its internal buffer.Thus, it ensures at-least-once tuple processing, but does not guarentee exactly-once tuple processing; thus if there is a reset, the same entry may be put twice.  If used with HBASEGet to do a Get, modify, Put on the same entry in a consistent region, you could end up doingthe modification twice, so that is not recommended. If you need exactly-once tuple processing, using checkAndPut along with sequence numbers may be possible.
 </p>
 
 </div>

@@ -34,7 +34,7 @@
 <p class="p"><strong class="ph b">Consistent Region</strong>
 </p>
 
-<p class="p">&lt;/p&gt;HBASEDelete may be in a consistent region, but it may not be the start of a consistent region. When in a consistent region, deleteAllVersions must either be unspecified or set to true. HBASEDelete ensures at-least-once tuple processing, but does not guarentee exactly-once tuple processing; thus if there is a reset, the same entry may be deleted twice.  At drain points, it flushes its internal buffer, and at resets, in clears its internal buffer.
+<p class="p">HBASEDelete may be in a consistent region, but it may not be the start of a consistent region. When in a consistent region, deleteAllVersions must either be unspecified or set to true. HBASEDelete ensures at-least-once tuple processing, but does not guarentee exactly-once tuple processing; thus if there is a reset, the same entry may be deleted twice.  At drain points, it flushes its internal buffer, and at resets, in clears its internal buffer.
 </p>
 
 </div>
