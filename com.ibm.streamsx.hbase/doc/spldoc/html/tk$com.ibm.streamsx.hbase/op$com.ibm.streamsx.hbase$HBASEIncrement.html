@@ -22,7 +22,7 @@
 <div class="body refbody">
 <div class="section">
 <p class="p">
-<a class="xref" href="../toolkits/toolkits.html">IBMStreams com.ibm.streamsx.hbase Toolkit</a> &gt; <a class="xref" href="tk$com.ibm.streamsx.hbase.html">com.ibm.streamsx.hbase 1.2.0.commit_93d75cb</a> &gt; <a class="xref" href="ns$com.ibm.streamsx.hbase.html">com.ibm.streamsx.hbase</a> &gt; HBASEIncrement</p>
+<a class="xref" href="../toolkits/toolkits.html">IBMStreams com.ibm.streamsx.hbase Toolkit</a> &gt; <a class="xref" href="tk$com.ibm.streamsx.hbase.html">com.ibm.streamsx.hbase 2.0.0.commit_82b8e01</a> &gt; <a class="xref" href="ns$com.ibm.streamsx.hbase.html">com.ibm.streamsx.hbase</a> &gt; HBASEIncrement</p>
 
 </div>
 
@@ -35,6 +35,18 @@
 </p>
 
 <p class="p"> HBASEIncrement is not allowed in a consistent region.
+</p>
+
+<p class="p"><strong class="ph b">Configurating the operator</strong>
+</p>
+
+<p class="p">In order to run, the operator the  HBase configuration information.  It reads this information from hbase-site.xml file.You can either directly point the operatorto hbase-site.xml via the hbaseSite parameter, or it can look for the hbase-site.xml parameter relative to the HBASE_HOME environment variable
+</p>
+
+<p class="p">If your operator will run on a host that has HBase installed, then you could setHBASE_HOME in the operator's runtime environment, in which case the operator looks under HBASE_HOME/conf for hbase-site.xml
+</p>
+
+<p class="p">If your HBase in located on a different host than streams, then use the hbaseSite parameter.To do this, copy hbase-site.xml into your application (eg, into the etc directory) andpoint the hbaseSite parameter to this location, eg hbaseSite: "etc/hbase-site.xml"
 </p>
 
 </div>
