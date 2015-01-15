@@ -22,7 +22,7 @@
 <div class="body refbody">
 <div class="section">
 <p class="p">
-<a class="xref" href="../toolkits/toolkits.html">IBMStreams com.ibm.streamsx.hbase Toolkit</a> &gt; <a class="xref" href="tk$com.ibm.streamsx.hbase.html">com.ibm.streamsx.hbase 2.0.0.commit_82b8e01</a> &gt; <a class="xref" href="ns$com.ibm.streamsx.hbase.html">com.ibm.streamsx.hbase</a> &gt; HBASEGet</p>
+<a class="xref" href="../toolkits/toolkits.html">IBMStreams com.ibm.streamsx.hbase Toolkit</a> &gt; <a class="xref" href="tk$com.ibm.streamsx.hbase.html">com.ibm.streamsx.hbase 2.0.0.commit_f78cbc1</a> &gt; <a class="xref" href="ns$com.ibm.streamsx.hbase.html">com.ibm.streamsx.hbase</a> &gt; HBASEGet</p>
 
 </div>
 
@@ -37,7 +37,7 @@
 <p class="p"> HBASEGet is allowed in a consistent region.  It is treated as a stateless operator, which means that if the underlying HBASE table changes between the first time a tuple is sent and when it is replayed, HBASEGet will give a different answerAs a result, if used in a consistent region in conjuction with an operator that changes the state of a tuple (ie, HBASEGet feeds a functor that increments a value, and then puts the tuple back into HBase with HBASEPutyou could get unexpected behavior. HBASEGet is not supported as the source of a consistent region.
 </p>
 
-<p class="p"><strong class="ph b">Configurating the operator</strong>
+<p class="p"><strong class="ph b">Configuring the operator</strong>
 </p>
 
 <p class="p">In order to run, the operator the  HBase configuration information.  It reads this information from hbase-site.xml file.You can either directly point the operatorto hbase-site.xml via the hbaseSite parameter, or it can look for the hbase-site.xml parameter relative to the HBASE_HOME environment variable

@@ -22,7 +22,7 @@
 <div class="body refbody">
 <div class="section">
 <p class="p">
-<a class="xref" href="../toolkits/toolkits.html">IBMStreams com.ibm.streamsx.hbase Toolkit</a> &gt; <a class="xref" href="tk$com.ibm.streamsx.hbase.html">com.ibm.streamsx.hbase 2.0.0.commit_82b8e01</a> &gt; <a class="xref" href="ns$com.ibm.streamsx.hbase.html">com.ibm.streamsx.hbase</a> &gt; HBASEPut</p>
+<a class="xref" href="../toolkits/toolkits.html">IBMStreams com.ibm.streamsx.hbase Toolkit</a> &gt; <a class="xref" href="tk$com.ibm.streamsx.hbase.html">com.ibm.streamsx.hbase 2.0.0.commit_f78cbc1</a> &gt; <a class="xref" href="ns$com.ibm.streamsx.hbase.html">com.ibm.streamsx.hbase</a> &gt; HBASEPut</p>
 
 </div>
 
@@ -37,7 +37,7 @@
 <p class="p">HBASEPut may be in a consistent region, but it may not be the start of a consistent region. At drain points, it flushes its internal buffer, and at resets, in clears its internal buffer.Thus, it ensures at-least-once tuple processing, but does not guarentee exactly-once tuple processing; thus if there is a reset, the same entry may be put twice.  If used with HBASEGet to do a Get, modify, Put on the same entry in a consistent region, you could end up doingthe modification twice, so that is not recommended. If you need exactly-once tuple processing, using checkAndPut along with sequence numbers may be possible.
 </p>
 
-<p class="p"><strong class="ph b">Configurating the operator</strong>
+<p class="p"><strong class="ph b">Configuring the operator</strong>
 </p>
 
 <p class="p">In order to run, the operator the  HBase configuration information.  It reads this information from hbase-site.xml file.You can either directly point the operatorto hbase-site.xml via the hbaseSite parameter, or it can look for the hbase-site.xml parameter relative to the HBASE_HOME environment variable

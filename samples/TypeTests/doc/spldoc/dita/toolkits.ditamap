@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="spldoc_map">
+<title>Toolkits</title>
+<topicref navtitle="Toolkits" locktitle="yes" href="toolkits/toolkits.xml" toc="yes" linking="normal">
+</topicref>
+</map>
+

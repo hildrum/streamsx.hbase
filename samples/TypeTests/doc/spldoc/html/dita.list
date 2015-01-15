@@ -1,12 +1,12 @@
-#Wed Jan 14 15:59:12 EST 2015
+#Thu Jan 15 14:33:38 EST 2015
 copytosourcelist=
-hreftargetslist=tk$TypeTests/tk$TypeTests.xml,tk$TypeTests/ns$com.ibm.streamsx.hbase.sample.xml,toolkits/toolkits.xml
+hreftargetslist=toolkits/toolkits.xml
 fullditatopicfile=fullditatopic.list
 fullditamapandtopicfile=fullditamapandtopic.list
-fullditatopiclist=tk$TypeTests/tk$TypeTests.xml,tk$TypeTests/ns$com.ibm.streamsx.hbase.sample.xml,toolkits/toolkits.xml
-fullditamapandtopiclist=tk$TypeTests/tk$TypeTests.xml,tk$TypeTests/ns$com.ibm.streamsx.hbase.sample.xml,toolkits.ditamap,toolkits/toolkits.xml
+fullditatopiclist=toolkits/toolkits.xml
+fullditamapandtopiclist=toolkits.ditamap,toolkits/toolkits.xml
 hrefditatopicfile=hrefditatopic.list
-hrefditatopiclist=tk$TypeTests/tk$TypeTests.xml,tk$TypeTests/ns$com.ibm.streamsx.hbase.sample.xml,toolkits/toolkits.xml
+hrefditatopiclist=
 user.input.file=toolkits.ditamap
 subtargetsfile=subtargets.list
 fullditamapfile=fullditamap.list
@@ -27,7 +27,7 @@ imagelist=
 htmlfile=html.list
 htmllist=
 canditopicsfile=canditopics.list
-canditopicslist=tk$TypeTests/tk$TypeTests.xml,tk$TypeTests/ns$com.ibm.streamsx.hbase.sample.xml,toolkits/toolkits.xml
+canditopicslist=toolkits/toolkits.xml
 keyreffile=keyref.list
 subjectschemefile=subjectscheme.list
 keyreflist=
