@@ -84,6 +84,166 @@ This page documents the properties of a set of native functions that may be invo
 <p class="p splhead-1"><strong class="ph b"><a class="xref" href="../references/FunctionModel.html#spldoc_reference_function_model__functionset__functions">Functions</a></strong></p>
 <dl class="dl" compact="compact">
  
+   <dt class="dt dlterm splpart" id="spldoc_functions__appendLong.list:.:int8:.:.int64"><tt class="ph tt">      public list&lt;int8&gt; appendLong(list&lt;int8&gt;, int64)      </tt>   </dt>
+
+   <dd class="dd">
+<p class="p">Append the long, in bytes, to the current blob and return the resulting blob.  The original blob is unchanged.
+</p>
+
+   </dd>
+
+ 
+ 
+   <dt class="dt dlterm splpart" id="spldoc_functions__appendLong.list:.:int8:.::..:N:..:.int64"><tt class="ph tt">      [N] public list&lt;int8&gt;[N] appendLong(list&lt;int8&gt;[N], int64)      </tt>   </dt>
+
+   <dd class="dd">
+<p class="p">Append the long, in bytes, to the current blob and return the resulting blob.  The original blob is unchanged.
+</p>
+
+   </dd>
+
+ 
+ 
+   <dt class="dt dlterm splpart" id="spldoc_functions__appendLong.list:.:uint8:.:.uint64"><tt class="ph tt">      public list&lt;uint8&gt; appendLong(list&lt;uint8&gt;, uint64)      </tt>   </dt>
+
+   <dd class="dd">
+<p class="p">Append the long, in bytes, to the current blob and return the resulting blob.  The original blob is unchanged.
+</p>
+
+   </dd>
+
+ 
+ 
+   <dt class="dt dlterm splpart" id="spldoc_functions__appendLong.list:.:uint8:.::..:N:..:.uint64"><tt class="ph tt">      [N] public list&lt;uint8&gt;[N] appendLong(list&lt;uint8&gt;[N], uint64)      </tt>   </dt>
+
+   <dd class="dd">
+<p class="p">Append the long, in bytes, to the current blob and return the resulting blob.  The original blob is unchanged.
+</p>
+
+   </dd>
+
+ 
+ 
+   <dt class="dt dlterm splpart" id="spldoc_functions__appendString.list:.:int8:.:.T"><tt class="ph tt">      &lt;string T&gt; public list&lt;int8&gt; appendString(list&lt;int8&gt;, T)      </tt>   </dt>
+
+   <dd class="dd">
+<p class="p">Get the type representation of the string toAppend (using the default character set), and append it to the blob, and return the result.  The original blob is unchanged.
+</p>
+
+   </dd>
+
+ 
+ 
+   <dt class="dt dlterm splpart" id="spldoc_functions__appendString.list:.:int8:.::..:N:..:.T"><tt class="ph tt">      &lt;string T&gt; [N] public list&lt;int8&gt;[N] appendString(list&lt;int8&gt;[N], T)      </tt>   </dt>
+
+   <dd class="dd">
+<p class="p">Get the type representation of the string toAppend (using the default character set), and append it to the blob, and return the result.  The original blob is unchanged.
+</p>
+
+   </dd>
+
+ 
+ 
+   <dt class="dt dlterm splpart" id="spldoc_functions__appendString.list:.:uint8:.:.T"><tt class="ph tt">      &lt;string T&gt; public list&lt;uint8&gt; appendString(list&lt;uint8&gt;, T)      </tt>   </dt>
+
+   <dd class="dd">
+<p class="p">Get the type representation of the string toAppend (using the default character set), and append it to the blob, and return the result.  The original blob is unchanged.
+</p>
+
+   </dd>
+
+ 
+ 
+   <dt class="dt dlterm splpart" id="spldoc_functions__appendString.list:.:uint8:.::..:N:..:.T"><tt class="ph tt">      &lt;string T&gt; [N] public list&lt;uint8&gt;[N] appendString(list&lt;uint8&gt;[N], T)      </tt>   </dt>
+
+   <dd class="dd">
+<p class="p">Get the type representation of the string toAppend (using the default character set), and append it to the blob, and return the result.  The original blob is unchanged.
+</p>
+
+   </dd>
+
+ 
+ 
+   <dt class="dt dlterm splpart" id="spldoc_functions__getLong.list:.:int8:.:.int32"><tt class="ph tt">      public int64 getLong(list&lt;int8&gt;, int32)      </tt>   </dt>
+
+   <dd class="dd">
+<p class="p">Starting at index, return the long represented by bytes in the blob from index to index+7
+</p>
+
+   </dd>
+
+ 
+ 
+   <dt class="dt dlterm splpart" id="spldoc_functions__getLong.list:.:int8:.::..:N:..:.int32"><tt class="ph tt">      [N] public int64 getLong(list&lt;int8&gt;[N], int32)      </tt>   </dt>
+
+   <dd class="dd">
+<p class="p">Starting at index, return the long represented by bytes in the blob from index to index+7
+</p>
+
+   </dd>
+
+ 
+ 
+   <dt class="dt dlterm splpart" id="spldoc_functions__getLong.list:.:uint8:.:.uint32"><tt class="ph tt">      public uint64 getLong(list&lt;uint8&gt;, uint32)      </tt>   </dt>
+
+   <dd class="dd">
+<p class="p">Starting at index, return the long represented by bytes in the blob from index to index+7
+</p>
+
+   </dd>
+
+ 
+ 
+   <dt class="dt dlterm splpart" id="spldoc_functions__getLong.list:.:uint8:.::..:N:..:.uint32"><tt class="ph tt">      [N] public uint64 getLong(list&lt;uint8&gt;[N], uint32)      </tt>   </dt>
+
+   <dd class="dd">
+<p class="p">Starting at index, return the long represented by bytes in the blob from index to index+7
+</p>
+
+   </dd>
+
+ 
+ 
+   <dt class="dt dlterm splpart" id="spldoc_functions__getString.list:.:int8:.:.int32.int32"><tt class="ph tt">      public rstring getString(list&lt;int8&gt;, int32, int32)      </tt>   </dt>
+
+   <dd class="dd">
+<p class="p">Starting at index, return the string represented by the bytes index to index+length-1 in the blob.  Assumes the default character set.
+</p>
+
+   </dd>
+
+ 
+ 
+   <dt class="dt dlterm splpart" id="spldoc_functions__getString.list:.:int8:.::..:N:..:.int32.int32"><tt class="ph tt">      [N] public rstring getString(list&lt;int8&gt;[N], int32, int32)      </tt>   </dt>
+
+   <dd class="dd">
+<p class="p">Starting at index, return the string represented by the bytes index to index+length-1 in the blob.  Assumes the default character set.
+</p>
+
+   </dd>
+
+ 
+ 
+   <dt class="dt dlterm splpart" id="spldoc_functions__getString.list:.:uint8:.:.uint32.uint32"><tt class="ph tt">      public rstring getString(list&lt;uint8&gt;, uint32, uint32)      </tt>   </dt>
+
+   <dd class="dd">
+<p class="p">Starting at index, return the string represented by the bytes index to index+length-1 in the blob.  Assumes the default character set.
+</p>
+
+   </dd>
+
+ 
+ 
+   <dt class="dt dlterm splpart" id="spldoc_functions__getString.list:.:uint8:.::..:N:..:.uint32.uint32"><tt class="ph tt">      [N] public rstring getString(list&lt;uint8&gt;[N], uint32, uint32)      </tt>   </dt>
+
+   <dd class="dd">
+<p class="p">Starting at index, return the string represented by the bytes index to index+length-1 in the blob.  Assumes the default character set.
+</p>
+
+   </dd>
+
+ 
+ 
    <dt class="dt dlterm splpart" id="spldoc_functions__makeKey.int64.T"><tt class="ph tt">      &lt;string T&gt; public list&lt;int8&gt; makeKey(int64, T)      </tt>   </dt>
 
    <dd class="dd">   </dd>
